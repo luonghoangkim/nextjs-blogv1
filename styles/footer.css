@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu bằng chiều cao của cửa sổ trình duyệt */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1; /* Chiếm toàn bộ không gian còn lại trong flex container (body) */
+  }
+  
+  footer {
+    position: fixed; /* Đặt vị trí footer cố định */
+    bottom: 0; /* Đặt footer ở phía dưới cùng */
+    width: 100%; /* Đảm bảo chiều rộng bằng chiều rộng của cửa sổ trình duyệt */
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
