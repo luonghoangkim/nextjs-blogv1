@@ -1,11 +1,7 @@
-import Link from "next/link";
-import HorizontalMenu from "../components/horizontalMenu";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import Layout from "../components/layuot";
-import Header from "../components/header";
-import Banner from "../components/banner";
-import Container from "../components/container";
+import Layout from "../components/layuot"; 
+import Banner from "../components/banner"; 
 import NewsList from "../components/home/newListPost";
 import Article from "../interface/type";
 import { fetchData } from "../lib/data";

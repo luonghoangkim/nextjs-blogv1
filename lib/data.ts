@@ -1,11 +1,6 @@
 // Khai báo kiểu dữ liệu cho mỗi bài viết (article)
-interface Article {
-  title: string;           // Tiêu đề bài viết
-  url: string;             // Đường dẫn (URL) tới bài viết
-  publishedAt: string;     // Ngày xuất bản của bài viết
-  urlToImage: string;  // Đường dẫn (URL) tới hình ảnh minh họa của bài viết
-  content:string
-}
+import Article from "../interface/type";
+
 
 // Hàm fetchData sẽ trả về một mảng các bài viết (Article[]) dưới dạng Promise
 export async function fetchData(): Promise<Article[]> {
@@ -14,7 +9,7 @@ export async function fetchData(): Promise<Article[]> {
 
     // Gọi API để lấy dữ liệu từ nguồn tin tức
     const response = await fetch(
-      `https://newsapi.org/v2/everything?q=tesla&from=2023-07-03&sortBy=publishedAt&apiKey=${apiKey}`
+      `https://newsapi.org/v2/everything?q=tesla&from=2023-07-11&sortBy=publishedAt&apiKey=${apiKey}`
     );
 
     // Chuyển đổi dữ liệu trả về từ API thành đối tượng JSON

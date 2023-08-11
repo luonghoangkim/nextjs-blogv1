@@ -4,6 +4,7 @@ const menuData = [
     {title: 'Hướng dẫn & thủ thuật' , link: '/posts/guides_tips'},
     {title: 'Lập trình' , link: '/posts/programing'},
     {title: 'Chatbot - tư vấn' , link: '/posts/chatbot'}, 
+    {title: 'Về chúng tôi' , link: '/posts/aboutUs'},
     {title: 'Đăng bài' , link: '/crui_actions/creater'}
 ];
 
