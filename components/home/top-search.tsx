@@ -5,7 +5,7 @@ interface TopSearchProps {
   searches: string[];
 }
 
-const TopSearch: React.FC<TopSearchProps> = ({ searches }) => {
+const TopSearch = ({ searches }: TopSearchProps) => {
   return (
     <div className="mt-5 mb-5 sticky top-0 z-50 pt-10">
       <p className="bg-black text-white text-center p-3 font-bold">Tìm kiếm hàng đầu</p>

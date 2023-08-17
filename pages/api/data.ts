@@ -1,5 +1,5 @@
 // Khai báo kiểu dữ liệu cho mỗi bài viết (article)
-import Article from "../interface/type";
+import Article from "../../interface/type";
 
 
 // Hàm fetchData sẽ trả về một mảng các bài viết (Article[]) dưới dạng Promise
@@ -9,16 +9,16 @@ export async function fetchData(): Promise<Article[]> {
 
     // Gọi API để lấy dữ liệu từ nguồn tin tức
     const response = await fetch(
-      `https://newsapi.org/v2/everything?q=tesla&from=2023-07-11&sortBy=publishedAt&apiKey=${apiKey}`
+      `https://newsapi.org/v2/everything?q=tesla&from=2023-07-17&sortBy=publishedAt&apiKey=${apiKey}`
     );
 
     // Chuyển đổi dữ liệu trả về từ API thành đối tượng JSON
-    const data: { articles: Article[] } = await response.json(); 
+    const data: { articles: Article[] } = await response.json();
     // Trả về mảng các bài viết (Article[]) từ đối tượng JSON
     return data.articles;
   } catch (error) {
     // Xử lý lỗi nếu có
-    console.error('Error fetching data:', error); 
+    console.error('Error fetching data:', error);
     // Trả về mảng rỗng nếu có lỗi
     return [];
   }

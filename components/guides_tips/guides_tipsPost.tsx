@@ -9,10 +9,10 @@ interface Props {
   articles: Article[];
 }
 
-const FutureListPosts = ({ articles } : Props) => {
+const Guides_TipsPosts = ({ articles } : Props) => {
   return (
     <div className='font-bebas-neue w-2/3' >
-      <h2 className='text-2xl font-bold tracking-tight md:tracking-tighter leading-tight ml-5 mb-2 mt-2'>Bài viết khác</h2>
+      <h2 className='text-2xl font-bold tracking-tight md:tracking-tighter leading-tight ml-5 mb-2 mt-2'>Bài viết nổi bật</h2>
       <nav>
         <ul>
           {articles.map((article) => (
@@ -36,5 +36,5 @@ const FutureListPosts = ({ articles } : Props) => {
   );
 };
 
-export default FutureListPosts;
+export default Guides_TipsPosts;
 

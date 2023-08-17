@@ -9,7 +9,7 @@ interface Props {
   articles: Article[];
 }
 
-const NewsList: React.FC<Props> = ({ articles }) => {
+const NewsList = ({ articles } : Props) => {
   return (
     <div className='font-bebas-neue w-2/3' >
       <h2 className='text-3xl font-bold tracking-tight md:tracking-tighter leading-tight mb-2 mt-2'>Bài viết mới</h2>

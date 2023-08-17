@@ -35,3 +35,50 @@
   color: #000FFF;
   background-color: #ddd;
 }
+
+/* Định nghĩa CSS cho menu cấp 2 */
+.menuItem {
+  position: relative;
+}
+
+.subMenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Đặt vị trí bên dưới menu cấp 1 */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Hiển thị menu cấp 2 khi hover vào menu cấp 1 */
+.menuItem:hover .subMenu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subMenu li {
+  margin: 5px 0;
+}
+
+.subMenu a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.subMenu a:hover {
+  color: #007bff;
+}
+

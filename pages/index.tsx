@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import Layout from "../components/layuot"; 
-import Banner from "../components/banner"; 
+import Layout from "../components/layuot";
+import Banner from "../components/home/banner";
 import NewsList from "../components/home/newListPost";
 import Article from "../interface/type";
-import { fetchData } from "../lib/data";
+import { fetchData } from "./api/data";
 import RightContent from "../components/home/rightContent";
 
 
@@ -20,11 +20,9 @@ export default function Home({ articles }: Props) {
       <Layout>
         <Head>
           <title>Chào mừng đến web công nghệ</title>
-        </Head>
-
+        </Head> 
         <div>
-          <Banner />
-
+          <Banner /> 
           <div className="flex">
             <NewsList articles={articles} />
             <RightContent />

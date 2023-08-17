@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import styles from "../styles/menu.module.css";
 import menuData from "./menuData";
 
-const HorizontalMenu: React.FC = () => {
+const HorizontalMenu = () => {
   const router = useRouter();
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
