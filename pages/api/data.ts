@@ -9,7 +9,7 @@ export async function fetchData(): Promise<Article[]> {
 
     // Gọi API để lấy dữ liệu từ nguồn tin tức
     const response = await fetch(
-      `https://newsapi.org/v2/everything?q=tesla&from=2023-07-17&sortBy=publishedAt&apiKey=${apiKey}`
+      `https://newsapi.org/v2/everything?q=tesla&from=2023-07-18&sortBy=publishedAt&apiKey=${apiKey}`
     );
 
     // Chuyển đổi dữ liệu trả về từ API thành đối tượng JSON
